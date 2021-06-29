@@ -67,7 +67,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="/images/logo.png?v=5.1.3" color="#222">
 
 
   <link rel="manifest" href="/images/manifest.json">
@@ -92,11 +92,11 @@
 <meta name="keywords" content="ios, swiftui, property, wrapper, 属性, 包装器, StateObject, AppStorage, SceneStorage, UIApplicationDelegateAdaptor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftUI（iOS 14）新增属性包装器（Property Wrapper）">
-<meta property="og:url" content="http://keisme.cn/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html">
-<meta property="og:site_name" content="keisme">
+<meta property="og:url" content="http://zzzw.cool/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html">
+<meta property="og:site_name" content="zzzw">
 <meta property="og:description" content="@StateObject@StateObject 修饰的对象与 @ObservedObject 一样，都需要遵循 Observable 协议，功能也类似。区别在于，@StateObject 修饰的对象只会在所属的 View 中创建一次并在 View 的生命周期内存储相应的状态，而 @ObservedObject 修饰的对象会随着 View 的重绘生成新的对象，不会在 View 的生命周期内存储该对">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-07-22T15:21:03.567Z">
+<meta property="og:updated_time" content="2021-06-28T12:24:42.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SwiftUI（iOS 14）新增属性包装器（Property Wrapper）">
 <meta name="twitter:description" content="@StateObject@StateObject 修饰的对象与 @ObservedObject 一样，都需要遵循 Observable 协议，功能也类似。区别在于，@StateObject 修饰的对象只会在所属的 View 中创建一次并在 View 的生命周期内存储相应的状态，而 @ObservedObject 修饰的对象会随着 View 的重绘生成新的对象，不会在 View 的生命周期内存储该对">
@@ -129,14 +129,14 @@
 
 
 
-  <link rel="canonical" href="http://keisme.cn/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html"/>
+  <link rel="canonical" href="http://zzzw.cool/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html"/>
 
 
 
 
 
 <script data-ad-client="ca-pub-4783769464073974" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <title>SwiftUI（iOS 14）新增属性包装器（Property Wrapper） | keisme</title>
+  <title>SwiftUI（iOS 14）新增属性包装器（Property Wrapper） | zzzw</title>
   
 
 
@@ -166,12 +166,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">keisme</span>
+        <span class="site-title">zzzw</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">Just For Fun</h1>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -307,16 +307,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://keisme.cn/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html">
+    <link itemprop="mainEntityOfPage" href="http://zzzw.cool/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="keisme">
+      <meta itemprop="name" content="zzzw">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="keisme">
+      <meta itemprop="name" content="zzzw">
     </span>
 
     
@@ -359,8 +359,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ios/" itemprop="url" rel="index">
-                    <span itemprop="name">ios</span>
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -434,7 +434,7 @@
 <p>当场景销毁时，该值也会销毁。建议存储轻量的、不敏感的数据。</p>
 <h2 id="UIApplicationDelegateAdaptor"><a href="#UIApplicationDelegateAdaptor" class="headerlink" title="@UIApplicationDelegateAdaptor"></a>@UIApplicationDelegateAdaptor</h2><p>用来调用 AppDelegate 中的生命周期方法。</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AppDelegate</span>: <span class="title">NSObject</span>, <span class="title">UIApplicationDelegate</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@main</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">MyApp</span>: <span class="title">App</span> </span>&#123;</span><br><span class="line">    @<span class="type">UIApplicationDelegateAdaptor</span>(<span class="type">AppDelegate</span>.<span class="keyword">self</span>) <span class="keyword">var</span> appDelegate</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> body: some <span class="type">Scene</span> &#123;</span><br><span class="line">        <span class="type">WindowGroup</span> &#123;</span><br><span class="line">            <span class="type">ContentView</span>()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="其它参考"><a href="#其它参考" class="headerlink" title="其它参考"></a>其它参考</h2><p>之前的文章<a href="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html">SwiftUI 中常见的属性包装器（Property Wrapper）概览</a>和今天这篇，只是列举了一些常用的，更多相关内容和使用方法可以参考下面两片佳作：</p>
+<h2 id="其它参考"><a href="#其它参考" class="headerlink" title="其它参考"></a>其它参考</h2><p>之前的文章<a href="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html" target="_blank" rel="noopener">SwiftUI 中常见的属性包装器（Property Wrapper）概览</a>和今天这篇，只是列举了一些常用的，更多相关内容和使用方法可以参考下面两片佳作：</p>
 <ul>
 <li><p><a href="https://swiftuipropertywrappers.com" target="_blank" rel="noopener">swiftuipropertywrappers</a></p>
 </li>
@@ -462,14 +462,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="keisme 微信支付"/>
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="zzzw 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="keisme 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="zzzw 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -487,11 +487,11 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
-    keisme
+    zzzw
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://keisme.cn/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html" title="SwiftUI（iOS 14）新增属性包装器（Property Wrapper）">http://keisme.cn/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html</a>
+    <a href="http://zzzw.cool/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html" title="SwiftUI（iOS 14）新增属性包装器（Property Wrapper）">http://zzzw.cool/SwiftUI（iOS-14）新增属性包装器（Property-Wrapper）.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -506,9 +506,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ios/" rel="tag"><i class="fa fa-tag"></i> ios</a>
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
           
-            <a href="/tags/swiftui/" rel="tag"><i class="fa fa-tag"></i> swiftui</a>
+            <a href="/tags/SwiftUI/" rel="tag"><i class="fa fa-tag"></i> SwiftUI</a>
           
         </div>
       
@@ -612,9 +612,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/avatar.png"
-                alt="keisme" />
+                alt="zzzw" />
             
-              <p class="site-author-name" itemprop="name">keisme</p>
+              <p class="site-author-name" itemprop="name">zzzw</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -625,7 +625,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -636,7 +636,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -647,7 +647,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -731,7 +731,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">keisme</span>
+  <span class="author" itemprop="copyrightHolder">zzzw</span>
 
   
 </div>
@@ -752,7 +752,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共46.7k字</span>
+  <span class="post-count">博客全站共7.6k字</span>
 </div>
 
         

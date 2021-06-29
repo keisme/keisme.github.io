@@ -67,7 +67,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="/images/logo.png?v=5.1.3" color="#222">
 
 
   <link rel="manifest" href="/images/manifest.json">
@@ -88,22 +88,22 @@
 
 
 
-<meta name="description" content="​    Demo @State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  123456789101112131415161718192021222324252627282930313233343536373">
+<meta name="description" content="@State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  1234567891011121314151617181920212223242526272829303132333435363738394041424">
 <meta name="keywords" content="ios, swiftui, 属性, 包装器, property, wrapper">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftUI 中常见的属性包装器（Property Wrapper）概览">
-<meta property="og:url" content="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html">
-<meta property="og:site_name" content="keisme">
-<meta property="og:description" content="​    Demo @State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  123456789101112131415161718192021222324252627282930313233343536373">
+<meta property="og:url" content="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html">
+<meta property="og:site_name" content="zzzw">
+<meta property="og:description" content="@State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  1234567891011121314151617181920212223242526272829303132333435363738394041424">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/1.png">
-<meta property="og:image" content="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/2.png">
-<meta property="og:image" content="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/3.png">
-<meta property="og:updated_time" content="2020-05-26T13:54:56.275Z">
+<meta property="og:image" content="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/1.png">
+<meta property="og:image" content="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/2.png">
+<meta property="og:image" content="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/3.png">
+<meta property="og:updated_time" content="2021-06-28T12:21:42.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SwiftUI 中常见的属性包装器（Property Wrapper）概览">
-<meta name="twitter:description" content="​    Demo @State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  123456789101112131415161718192021222324252627282930313233343536373">
-<meta name="twitter:image" content="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/1.png">
+<meta name="twitter:description" content="@State由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。 下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。  1234567891011121314151617181920212223242526272829303132333435363738394041424">
+<meta name="twitter:image" content="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/1.png">
 
 
 
@@ -133,14 +133,14 @@
 
 
 
-  <link rel="canonical" href="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html"/>
+  <link rel="canonical" href="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html"/>
 
 
 
 
 
 <script data-ad-client="ca-pub-4783769464073974" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <title>SwiftUI 中常见的属性包装器（Property Wrapper）概览 | keisme</title>
+  <title>SwiftUI 中常见的属性包装器（Property Wrapper）概览 | zzzw</title>
   
 
 
@@ -170,12 +170,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">keisme</span>
+        <span class="site-title">zzzw</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">Just For Fun</h1>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -311,16 +311,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html">
+    <link itemprop="mainEntityOfPage" href="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="keisme">
+      <meta itemprop="name" content="zzzw">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="keisme">
+      <meta itemprop="name" content="zzzw">
     </span>
 
     
@@ -363,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ios/" itemprop="url" rel="index">
-                    <span itemprop="name">ios</span>
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -401,7 +401,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,339
+                  1,338
                 </span>
               
 
@@ -426,8 +426,7 @@
       
 
       
-        <p>​    <a href="https://github.com/keisme/SwiftUI_Learning/tree/master/PropertyWrapperExample" target="_blank" rel="noopener">Demo</a></p>
-<h1 id="State"><a href="#State" class="headerlink" title="@State"></a>@State</h1><p>由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。</p>
+        <h1 id="State"><a href="#State" class="headerlink" title="@State"></a>@State</h1><p>由 SwiftUI 管理的可读写的属性包装器，当修饰的属性值改变的时候，界面会随之更新。由 @State 包装的属性通常用 private 修饰，在 body 内使用。</p>
 <p>下面的实例是一个可以切换天气的界面，并且可以控制天气是否可变。</p>
 <img src="/SwiftUI-中常见的属性包装器（Property-Wrapper）概览/1.png">
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Weather</span>: <span class="title">String</span>, <span class="title">CaseIterable</span> </span>&#123;</span><br><span class="line">  <span class="keyword">case</span> sun = <span class="string">"Sun"</span></span><br><span class="line">  <span class="keyword">case</span> cloud = <span class="string">"Cloud"</span></span><br><span class="line">  <span class="keyword">case</span> rain = <span class="string">"Rain"</span></span><br><span class="line">  <span class="keyword">case</span> snow = <span class="string">"Snow"</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> imageName: <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> <span class="keyword">self</span> &#123;</span><br><span class="line">      <span class="keyword">case</span> .sun:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"sun.max"</span></span><br><span class="line">      <span class="keyword">case</span> .cloud:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"cloud"</span></span><br><span class="line">      <span class="keyword">case</span> .rain:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"cloud.rain"</span></span><br><span class="line">      <span class="keyword">case</span> .snow:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"snow"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">StateView</span>: <span class="title">View</span> </span>&#123;</span><br><span class="line">  @<span class="type">State</span> <span class="keyword">private</span> <span class="keyword">var</span> weather: <span class="type">Weather</span> = .sun</span><br><span class="line">  @<span class="type">State</span> <span class="keyword">private</span> <span class="keyword">var</span> mutableWeather = <span class="literal">false</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> body: some <span class="type">View</span> &#123;</span><br><span class="line">    <span class="type">VStack</span> &#123;</span><br><span class="line">      <span class="type">Toggle</span>(isOn: $mutableWeather) &#123;</span><br><span class="line">        <span class="type">Text</span>(mutableWeather ? <span class="string">"Mutable"</span> : <span class="string">"Immutable"</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      .padding()</span><br><span class="line">      <span class="comment">// add weather view</span></span><br><span class="line">      <span class="type">Spacer</span>()</span><br><span class="line">    &#125;</span><br><span class="line">    .navigationBarTitle(<span class="string">"Weather"</span>, displayMode: .inline)</span><br><span class="line">    .navigationBarItems(trailing: <span class="type">Button</span>(action: &#123;</span><br><span class="line">      <span class="keyword">if</span> <span class="keyword">self</span>.mutableWeather &#123;</span><br><span class="line">        <span class="keyword">let</span> random = <span class="type">Int</span>.random(<span class="keyword">in</span>: <span class="number">0</span>..&lt;<span class="type">Weather</span>.allCases.<span class="built_in">count</span>)</span><br><span class="line">        <span class="keyword">self</span>.weather = <span class="type">Weather</span>.allCases[random]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;) &#123;</span><br><span class="line">      <span class="type">Text</span>(weather.rawValue)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -478,14 +477,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="keisme 微信支付"/>
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="zzzw 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="keisme 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="zzzw 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -503,11 +502,11 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
-    keisme
+    zzzw
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html" title="SwiftUI 中常见的属性包装器（Property Wrapper）概览">http://keisme.cn/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html</a>
+    <a href="http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html" title="SwiftUI 中常见的属性包装器（Property Wrapper）概览">http://zzzw.cool/SwiftUI-中常见的属性包装器（Property-Wrapper）概览.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -522,9 +521,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ios/" rel="tag"><i class="fa fa-tag"></i> ios</a>
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
           
-            <a href="/tags/swiftui/" rel="tag"><i class="fa fa-tag"></i> swiftui</a>
+            <a href="/tags/SwiftUI/" rel="tag"><i class="fa fa-tag"></i> SwiftUI</a>
           
         </div>
       
@@ -537,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/App-Store-提交审核被拒记录.html" rel="next" title="App Store 提交审核被拒记录">
-                <i class="fa fa-chevron-left"></i> App Store 提交审核被拒记录
+              <a href="/SwiftFormat-的使用.html" rel="next" title="SwiftFormat 的使用">
+                <i class="fa fa-chevron-left"></i> SwiftFormat 的使用
               </a>
             
           </div>
@@ -628,9 +627,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/avatar.png"
-                alt="keisme" />
+                alt="zzzw" />
             
-              <p class="site-author-name" itemprop="name">keisme</p>
+              <p class="site-author-name" itemprop="name">zzzw</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -641,7 +640,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -652,7 +651,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -663,7 +662,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -747,7 +746,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">keisme</span>
+  <span class="author" itemprop="copyrightHolder">zzzw</span>
 
   
 </div>
@@ -768,7 +767,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共46.7k字</span>
+  <span class="post-count">博客全站共7.6k字</span>
 </div>
 
         
